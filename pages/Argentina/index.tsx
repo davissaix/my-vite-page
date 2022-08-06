@@ -1,12 +1,13 @@
 import React from 'react'
 import '../picsStyle.css'
+import calafate from "../src/assets/pics/argentina/calafate III_1.jpg" 
 
 const Argentina = () => {
   return (
     <div className="container-fluid">
     <div className="row">
       <div className="column">
-        <img src="../src/assets/pics/argentina/calafate III_1.jpg" alt ="calafate street" />
+        <img src={calafate} alt ="calafate street" />
         <img src="../src/assets/pics/argentina/glaciar_5.jpg" alt="iceberg two"/>
        <img src="../src/assets/pics/argentina/glaciar II_4.jpg" alt ="iceberg" />
         <img src="../src/assets/pics/argentina/iguazu II_6.jpg" alt="iguazu waterfalls" />
