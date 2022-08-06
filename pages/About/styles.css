@@ -1,0 +1,105 @@
+:root {
+    --header-height-mobile: 334px;
+    --header-height-567px: 200.4px;
+    --footer-height-mobile: 75px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*------------------------*/
+.main-containers {
+    display: grid;
+    grid-template-columns: minmax(320px, 100%);
+    height:auto;   
+    background: linear-gradient(40deg, #8e8e8f 55%, #ebeaea );
+}
+.div-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
+    grid-template-rows: 1fr 2.5fr;
+    grid-template-areas: "portrait" 
+                        " bio "
+                         ;                 
+} 
+.div-img{
+    grid-area: portrait;
+    display: grid;
+    padding:35px 0 35px 0;
+    align-content: center;
+    justify-content: center;
+
+}  
+.div-img img{
+    box-sizing: border-box;
+	width: 300px;
+    height: auto;
+	
+	
+} 
+.div-bio{
+    grid-area: bio;
+    display: grid;
+    padding:35px 0 35px 0;
+    justify-self:center;
+    align-content:start;
+    width: 280px;
+    font-size:1.3rem;
+   
+} 
+.div-bio h2{
+    justify-self: center;
+    margin-bottom: 10px;
+}
+             
+
+/*-------------------------*/
+
+
+   
+   
+@media (min-width:700px){
+.div-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        height: auto;
+        grid-template-rows: 1fr ;
+        grid-template-areas:"portrait bio" 
+                            
+                            
+                             ;   
+}
+.main-container {
+    display: grid;
+    grid-template-columns: minmax(700px, 100%);
+    min-height: 70vh;  
+    background: linear-gradient(40deg, #8e8e8f 55%, #ebeaea );
+}
+.div-img{
+    margin: 2.5rem;
+    padding: 0;
+}
+.div-img img{
+    box-sizing: border-box;
+	width: 100%;
+    height: auto;	
+}
+.div-bio{
+    padding: 6rem 3rem 1rem 3rem;
+    font-size:1.3rem;
+    align-content:flex-start;
+    width: 100%;
+    height:auto;
+}
+}

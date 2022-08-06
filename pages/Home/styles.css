@@ -1,0 +1,98 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*--------------------------------------------------------------*/
+.main {
+    display: grid;
+    /* background: linear-gradient(40deg, #414142 55%, #6b6b6b );  */
+    background: linear-gradient(40deg, #8e8e8f 55%, #ebeaea ); 
+}
+.main-container {
+    display: grid;
+    height:auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "bicycle"
+                          "intro";
+    
+}
+.man-in-bicycle {
+    grid-area: bicycle;
+    justify-self: center;
+    
+    
+}
+img.cat {
+	box-sizing: border-box;
+	width: 100%; height: auto;
+	display: block;
+	margin: 4rem auto;
+	padding: 10%;
+	background: white;
+	border: 8px solid #333;
+	
+}
+.intro {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    grid-area: intro;
+    color: white;
+    text-align: center;
+    padding: 0 5px 15px 15px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    line-height: 26pt;
+}
+/*-------------------------------*/
+
+
+img.cat {
+	box-sizing: border-box;
+	width: 100%; height: auto;
+	display: block;
+	margin: 3rem 3rem;
+	padding: 10%;
+	background: white;
+	border: 8px solid #333;
+	
+}
+
+/*---------------------------------*/
+
+@media ( min-width: 567px) {
+   
+    .main-container {
+        display: grid;
+       
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        grid-template-areas: "bicycle intro";
+    }
+    .intro {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        grid-area: intro;
+        color: white;
+        text-align: center;
+        padding: 15px 80px 15px 15px;
+        font-size: 2rem;
+        font-weight: bold;   
+    }
+    
+   
+}

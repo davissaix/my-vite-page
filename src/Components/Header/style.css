@@ -1,0 +1,199 @@
+:root {
+    --header-height-mobile: 334px;
+    --header-height-567px: 200.4px;
+    --footer-height-mobile: 75px;
+}
+.hero {
+    display: grid;
+    grid-template-columns: minmax(320px, 750px);
+    height: var(--header-height-mobile);   
+}
+.hero-container {
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    width: 100%;
+    height: var(--header-height-mobile);
+    grid-template-rows: 50% 25% 25%;
+    grid-template-areas: "firma firma" 
+                        " home cams "
+                        "info envelope"
+                       ;                      
+                     
+}
+.firma {
+    grid-area: firma;
+    width: 100%;
+    height: 100%;
+     background: linear-gradient(40deg, #414142 55%, #6b6b6b ); 
+    
+
+ 
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+}
+.firma img{
+    max-width: 95%;
+    justify-self: center;
+    
+    
+}   
+.home {
+    grid-area: home; 
+    background-position: center;
+    text-align: center; 
+    background-color: white;  
+}
+.home img {
+    max-width: 33%;
+    height: 97%;
+}
+.cams {
+    grid-area: cams;  
+    background-position: center;
+    text-align: center;   
+    background-color: #E1A131;  
+}
+ .cams:hover{
+    background-color:#bd8526;
+} 
+.cams img {
+    max-width: 33%;
+    height: 97%;  
+}
+.info {
+    grid-area: info;
+    background-position: center;
+    text-align: center;    
+    background-color: #F0AB35; 
+}
+.info:hover {
+    background-color: #dd971e; 
+}
+.info img {
+    width: 60px;
+    height: 100%;
+    align-self: center;
+    padding: 8px 0 6px 0;
+}
+.envelope {
+    grid-area: envelope;
+    background-position: center;
+    text-align: center;  
+    background-color: #FFB638; 
+}
+.envelope:hover{
+    background-color: #f3a217; 
+}
+.envelope img {
+    max-width: 33%;
+    height: 100%;
+    padding: 12px 0 12px 0;
+}
+@media ( min-width: 567px) {
+    .hero {
+        display: grid;
+        grid-template-columns: minmax(320px, 100%);
+        height: var(--header-height-567px);   
+    }
+    .hero-container {
+        
+        grid-template-columns: 60% 40% ;
+       
+        height: var(--header-height-567px);
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas: "firma home " 
+                            " firma  cams"
+                            "firma info"
+                            "firma envelope "
+                            
+                           ;                      
+    }
+    
+    .info img {
+        width:45px;
+        height: 100%;
+        padding: 6px 0 4px 0;
+        
+        
+    }
+    
+    .envelope img {
+        max-width: 33%;
+        
+        padding: 10px 0 6px 0;
+    } 
+}
+@media ( min-width: 1015px) {
+     .hero-container {
+        
+        grid-template-columns: 60% 20% 20% ;
+       
+        height: var(--header-height-567px);
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "firma home cams " 
+                            " firma  info envelope"
+                           ;                      
+    }
+    .info img {
+        width: 70px;
+        padding: 15px 0 15px 0;
+      
+    }
+    
+    .envelope img {
+        width:  80px;
+        
+        padding: 20px 0 20px 0;
+    }
+    .home img {
+        padding: 8px 0 8px 0;
+        }
+    .cams img {
+        padding: 10px 0 10px 0;
+    }    
+}
+@media ( min-width: 1275px) {
+    .hero-container {
+       
+       grid-template-columns: 60% 10% 10% 10% 10% ;
+      
+       height: var(--header-height-567px);
+       grid-template-rows: 100%;
+       grid-template-areas: "firma home cams info envelope " 
+                          ;                      
+   }
+   .home{
+    min-height: 200.4px;
+    padding-top: 50px;
+   }
+   .home img {
+    max-width: 82.5px;
+    height: 97.2px;
+   }
+   .cams{
+       min-height: 200.4px;
+       padding-top: 50px;
+   }
+   .cams img {
+    max-width: 82.5px;
+    height: 97.2px;
+   }
+   .info{
+    min-height: 200.4px;
+    padding-top: 53px;
+   }
+   .info img {
+    width: 78px;
+    height: 95px;
+   }
+   .envelope{
+    min-height: 200.4px;
+    padding-top: 55px;
+   }
+   .envelope img {
+    max-width: 82.5px;
+    height: 95px;
+   }
+     
+}

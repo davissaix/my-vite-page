@@ -1,0 +1,15 @@
+#root {
+  --header-height-mobile: 334px;
+  --header-height-567px: 200.4px;
+  --footer-height-mobile: 75px;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}

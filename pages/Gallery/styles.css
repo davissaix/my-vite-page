@@ -1,0 +1,159 @@
+:root {
+    --header-height-mobile: 334px;
+    --header-height-567px: 200.4px;
+    --footer-height-mobile: 75px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*---------------*/
+.mains-container{
+    display: grid;
+    grid-template-columns: 100% ;
+    width: 100%;
+    height:auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr;
+    grid-template-areas: "street-photography"
+                          "cuba"
+                           "argentina"
+                           "france"
+                           "perus"
+                           "colombia"
+                           "nude";
+                          
+    background: linear-gradient(40deg, #8e8e8f 40%, #ebeaea );                        
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100% ;
+    
+    height:auto;
+    grid-template-rows: 1fr 3fr 1fr ;
+    grid-template-areas: "h2"
+                         "img"
+                         "button-more";
+}
+.h2 {
+    grid-area: h2;
+    align-self: flex-end ;
+    margin: 10px;
+}
+.img {
+    grid-area: img;
+}
+
+.button-more{
+    grid-area: button-more;
+    border: solid 1px #FFB638;
+    padding: 10px 20px;
+    margin: 0px 100px;
+    font-size: 1.2rem;
+    align-self: center;
+    text-decoration: none;
+    color: black;
+    
+}
+
+img.img {
+	box-sizing: border-box;
+	width: 260px;
+    height: auto;
+	display: block;
+	padding: 2%;
+	background: white;
+	/* border: 1px solid #333; */
+    
+}   
+.street-photography {
+    grid-area: street-photography;
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+} 
+ .cuba {
+    grid-area: cuba;
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+}
+.argentina {
+    grid-area: argentina;
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+}
+.france {
+    grid-area: france;
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+}
+.perus {
+    grid-area: perus;
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+}
+.colombia {
+    grid-area: colombia;
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+}
+.nude {
+    grid-area: nude;
+    display: grid;  
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------------*/
+
+@media ( min-width: 567px) {
+   
+    .mains-container{
+        grid-template-columns: 50% 50% ;
+        grid-template-rows:  1fr 1fr 1fr 1.5fr;
+        grid-template-areas: "street-photography cuba"
+                             "argentina france"
+                             "perus colombia"
+                             "nude nude";
+    }
+    
+    
+}
+@media ( min-width: 1015px) {
+    
+   .mains-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:   1fr 1fr 1.5fr ;
+        grid-template-areas: "street-photography cuba argentina "
+                             "france perus colombia"
+                             "nude nude nude ";
+    }
+   
+    .argent{
+        height: 330.44px;
+        width:280.44px;
+    }
+    .argent img{
+       justify-self:left;
+       align-self: center;
+       
+       
+    }
+    .argent h2{
+        justify-self: left;
+        padding-left: 25px;
+        
+     }
+}
