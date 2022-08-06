@@ -1,6 +1,6 @@
 import React from 'react'
 import '../picsStyle.css'
-import calafate from "../src/assets/pics/argentina/calafate III_1.jpg" 
+import calafate from "/../src/assets/pics/argentina/calafate III_1.jpg" 
 
 const Argentina = () => {
   return (
