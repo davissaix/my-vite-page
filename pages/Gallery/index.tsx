@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles.css'
 import { Link } from "react-router-dom";
+import street from "../../src/assets/motorcycle_small.jpg"
 
 const Gallery = () => {
   return (
@@ -9,7 +10,7 @@ const Gallery = () => {
               <section className="street-photography">
                   <div className="grid-container">
                       <h2 className="h2">Street Photography</h2>
-                      <img className="img" src="../src/assets/motorcycle_small.jpg" alt="motorcycle man on the road"/>
+                      <img className="img" src={street} alt="motorcycle man on the road"/>
                           <Link to='./Street'  className="button-more">more..</Link>
                   </div>
               </section>
