@@ -2,12 +2,12 @@ import React from 'react'
 import './styles.css'
 import { Link } from "react-router-dom";
 import street from "../../src/assets/motorcycle_small.jpg"
-import cuba from "/../src/assets/varadero sunset88.jpg"
-import argentina from  "/../src/assets/CATARATAS iGUAZU-small.jpg" 
-import france from "/../src/assets/paris1.jpg"
-import peru from "/../src/assets/peru1.jpg"
-import colombia from "/../src/assets/guaduas.jpg" 
-import nude from "/../src/assets/nudeOutOfFocus.jpg" 
+import cuba from "../../src/assets/varadero sunset88.jpg"
+import argentina from  "../../src/assets/CATARATAS iGUAZU-small.jpg" 
+import france from "../../src/assets/paris1.jpg"
+import peru from "../../src/assets/peru1.jpg"
+import colombia from "../../src/assets/guaduas.jpg" 
+import nude from "../../src/assets/nudeOutOfFocus.jpg" 
 const Gallery = () => {
   return (
       <div>
