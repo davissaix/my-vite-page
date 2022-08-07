@@ -2,6 +2,7 @@ import React from 'react'
 import './nude.css'
 // import ReactAudioPlayer from 'react-audio-player'
 import ahah from "../../src/assets/ahahaha.mp3"
+import gif from "../../src/assets/ahahah.gif"
 import ReactPlayer from 'react-player'
 
 const Nude = () => {
@@ -9,7 +10,7 @@ const Nude = () => {
     <div className='nude11'>
       <div className='Nude1'>
         <div className='jpark'><img className='imagen' 
-        src="../src/assets/ahahah.gif" alt="" /></div>
+        src={gif} alt="" /></div>
        
         
         <div className='textos'>
