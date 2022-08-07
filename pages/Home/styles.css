@@ -13,31 +13,30 @@ html {
 
 /*--------------------------------------------------------------*/
 .main {
-    display: grid;
+    
     /* background: linear-gradient(40deg, #414142 55%, #6b6b6b );  */
     background: linear-gradient(40deg, #8e8e8f 55%, #ebeaea ); 
+    
+    
 }
 .main-container {
-    display: grid;
-    height:auto;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "bicycle"
-                          "intro";
-    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items:center;
+    flex-wrap: wrap;
 }
-.man-in-bicycle {
-    grid-area: bicycle;
-    justify-self: center;
-    
-    
+.man-in-bicycle{
+    display:flex;
+    justify-content:center
 }
+
 img.cat {
 	box-sizing: border-box;
-	width: 100%; height: auto;
-	display: block;
-	margin: 4rem auto;
-	padding: 10%;
+	 height: auto;
+	
+	margin: 4rem 0 0 0;
+	padding: 10%; 
 	background: white;
 	border: 8px solid #333;
 	
@@ -46,7 +45,6 @@ img.cat {
     display: flex;
     align-self: flex-end;
     justify-content: center;
-    grid-area: intro;
     color: white;
     text-align: center;
     padding: 0 5px 15px 15px;
@@ -56,33 +54,21 @@ img.cat {
 
 p {
     line-height: 26pt;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 /*-------------------------------*/
 
 
-img.cat {
-	box-sizing: border-box;
-	width: 100%; height: auto;
-	display: block;
-	margin: 3rem 3rem;
-	padding: 10%;
-	background: white;
-	border: 8px solid #333;
-	
-}
 
-/*---------------------------------*/
-
-@media ( min-width: 567px) {
+/* @media ( min-width: 567px) {
    
     .main-container {
-        display: grid;
-       
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 100%;
-        grid-template-areas: "bicycle intro";
+        
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-    .intro {
+    /* .intro {
         display: flex;
         align-self: center;
         justify-content: center;
@@ -93,6 +79,6 @@ img.cat {
         font-size: 2rem;
         font-weight: bold;   
     }
-    
+     */
    
-}
+

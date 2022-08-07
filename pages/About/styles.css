@@ -80,7 +80,7 @@ html {
                             
                              ;   
 }
-.main-container {
+.main-containers {
     display: grid;
     grid-template-columns: minmax(700px, 100%);
     min-height: 70vh;  
