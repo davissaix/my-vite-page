@@ -25,6 +25,7 @@
 }
 .david  {
     grid-area: david;
+    text-align: center;
 }
 .insta {
     grid-area: insta;

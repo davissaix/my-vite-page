@@ -22,8 +22,9 @@ const Nude = () => {
 
           <ReactAudioPlayer
             src="../src/assets/ahahaha.m4a"
-            autoPlay
+            // autoPlay
             controls
+            muted
           />
 
             <h1 >ah ah ah </h1>
