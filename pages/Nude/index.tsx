@@ -1,8 +1,8 @@
 import React from 'react'
 import './nude.css'
-import ReactAudioPlayer from 'react-audio-player'
+// import ReactAudioPlayer from 'react-audio-player'
 import ahah from "../../src/assets/ahahaha.mp3"
-//si
+import ReactPlayer from 'react-player'
 
 const Nude = () => {
   return (
@@ -21,12 +21,7 @@ const Nude = () => {
          
           
 
-          <ReactAudioPlayer
-            src={ahah}
-            // autoPlay
-            controls
-            // muted
-          />
+            <ReactPlayer url={ahah} controls/>
 
             <h1 >ah ah ah </h1>
 
