@@ -9,8 +9,7 @@ const Nude = () => {
   return (
     <div className='nude11'>
       <div className='Nude1'>
-        <div className='jpark'><img className='imagen' 
-        src={gif} alt="" /></div>
+        <div className='jpark'><img className='imagen' src={gif} alt="" /></div>
        
         
         <div className='textos'>
@@ -22,7 +21,7 @@ const Nude = () => {
          
           
 
-            <ReactPlayer url={ahah} controls/>
+            <ReactPlayer height='6vh' width='50%' className='player' url={ahah} controls/>
 
             <h1 >ah ah ah </h1>
 

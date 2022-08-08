@@ -10,34 +10,49 @@
     
     
 }
-.imagen{
+/* .imagen{
   
   display: flex;
 
 
-}
+} */
 .Nude1{
     display: flex;
    flex-wrap: wrap;
    gap:2vh;
-    width:100vw;
+    /* width:100vw; */
     padding:4vh;
     
    justify-content: space-around;
-   align-content:space-around;
+   align-content:center;
    
 }
 .textos{
     display: flex;
+
+    /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content:space-between;
     align-items:center;
     padding-top: 1vh;
-    height:360px;
-    gap:2rem
+   
+    gap:1rem
 }
-.lineHeigh{
+/* .lineHeigh{
 
     line-height:6vh;
     text-align:center;
-}
+} */
+/* .player{
+    justify-self: center;
+    align-self: center;
+    height:1vh
+} */
+@media (max-width: 800px) {
+    .Nude1 {
+      flex-direction: row;
+    }
+  }
+  h1{
+    text-align: center
+  }
