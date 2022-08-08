@@ -15,14 +15,26 @@ import Peru from '../pages/Peru'
 import Colombia from '../pages/Colombia'
 import Nude from '../pages/Nude'
 
-
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function App() {
  
+  
+  function ScrollToTop() {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
+    return null;
+  }
 
   return (
     <div className="App">
       <BrowserRouter>
+      <ScrollToTop />
         <Header/>
           <Routes> 
             <Route path='' element = {<Home/>}/>

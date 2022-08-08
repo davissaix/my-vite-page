@@ -54,5 +54,7 @@
     }
   }
   h1{
-    text-align: center
+    text-align: center;
+    white-space: normal;
+    line-height: 26pt;
   }
