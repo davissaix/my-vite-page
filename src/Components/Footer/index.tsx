@@ -22,7 +22,7 @@ const Footer = () => {
                       </a>
                   </div>
                   <div className="insta">
-                      <a href="https://www.instagram.com/davidparis_ai/" target="_blank" rel="noopener noreferrer">
+                      <a  target="_blank" rel="noopener noreferrer">
                           <img src={insta} alt="instagram-icon" />
                       </a>
 
